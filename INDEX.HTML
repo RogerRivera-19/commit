@@ -1,60 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suma de Dos Números</title>
-    <link rel="stylesheet" href="STYLE.CSS">
-    <body>
-    <div class="container">
-        <h1>Suma de Dos Números</h1>
-        
-        <div class="input-group">
-            <label for="numero1">Primer número:</label>
-            <input type="number" id="numero1" placeholder="Ingresa el primer número">
-        </div>
-        
-        <div class="input-group">
-            <label for="numero2">Segundo número:</label>
-            <input type="number" id="numero2" placeholder="Ingresa el segundo número">
-        </div>
-        
-        <button onclick="sumar()">Calcular Suma</button>
-        
-        <div id="resultado" class="resultado"></div>
-    </div>
-
-    <script>
-        function sumar() {
-            // Obtener los valores de los inputs
-            const num1 = parseFloat(document.getElementById('numero1').value);
-            const num2 = parseFloat(document.getElementById('numero2').value);
-            
-            // Verificar que se hayan ingresado números válidos
-            if (isNaN(num1) || isNaN(num2)) {
-                document.getElementById('resultado').innerHTML = 'Por favor, ingresa números válidos';
-                document.getElementById('resultado').style.backgroundColor = '#ffe8e8';
-                document.getElementById('resultado').style.color = '#d63031';
-            } else {
-                // Realizar la suma
-                const suma = num1 + num2;
-                
-                // Mostrar el resultado
-                document.getElementById('resultado').innerHTML = `${num1} + ${num2} = ${suma}`;
-                document.getElementById('resultado').style.backgroundColor = '#e8f5e8';
-                document.getElementById('resultado').style.color = '#2e7d2e';
-            }
-            
-            // Mostrar el div del resultado
-            document.getElementById('resultado').style.display = 'block';
-        }
-        
-        // Permitir calcular presionando Enter
-        document.addEventListener('keypress', function(event) {
-            if (event.key === 'Enter') {
-                sumar();
-            }
-        });
-    </script>
+    <title>Doc</title>
+    <h1>Bienvenido</h1> ..
+</head>
+<body>
+    
 </body>
 </html>
